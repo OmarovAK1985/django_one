@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+
+
+
+<table class="table table-hover mt-3">
+    <thead class="table-info">
+    <tr>
+        <th>Номер по порядку</th>
+        <th>Наименование объекта</th>
+    </tr>
+    </thead>
+    <tbody class="table-success">
+        {% for i in my_list %}
+        <tr>
+            <th class="scope">{{forloop.counter}}.</th>
+            <td>{{i}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

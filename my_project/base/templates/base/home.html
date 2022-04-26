@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+<div class="pt-2">
+<ul class="list-group list-group-horizontal list-hover ">
+<li class="list-group-item bg-danger m-1">
+    <a href="{% url 'home:time_now' %}" class="text-light text-decoration-none ">Ссылка на текущее время</a>
+</li>
+<li class="list-group-item bg-danger m-1">
+    <a href="{% url 'home:work_directories' %}" class="text-light text-decoration-none">Ссылка на списки файлов</a>
+</li>
+
+</ul>
+</div>
+
+{% endblock %}
